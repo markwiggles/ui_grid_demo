@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Grid Demo</title>
+
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css"/>
+        <link rel="stylesheet" href="styles/app.css"/>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/lodash/dist/lodash.min.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+
+        <!-- Adds animation support in AngularJS-->
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
+
+        <script src="app.module.js"></script>
+        <script src="home/home.module.js"></script>
+        <script src="home/home.controller.js"></script>
+        <script src="core/core.module.js"></script>
+        <script src="core/client/client.module.js"></script>
+        <script src="core/client/client.factory.js"></script>
+
+    </head>
+    <body ng-app="uiGridDemo">
+        <div class="container">
+
+            <div class="container" ng-controller="homeController" style="height:600px;width:800px;">
+                <h3>Grid demo</h3>
+                <div id="grid1" ui-grid="gridOptions" class="grid" ></div>
+
+            </div>
+        </div
+    </body>
+</html>

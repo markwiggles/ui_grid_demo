@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.d.ts
+# app/**/*.js
+# /index.html
+!/typings/**/*.d.ts
+*.js.map
+npm-debug*.*
+bower_components/
